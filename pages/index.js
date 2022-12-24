@@ -1,8 +1,8 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
-import FeatureCard3 from '../components/feature-card3'
-import FeatureCard4 from '../components/feature-card4'
+import AppComponent from '../components/component'
 
 const Home = (props) => {
   return (
@@ -12,143 +12,127 @@ const Home = (props) => {
           <title>Landing Page</title>
           <meta property="og:title" content="Landing Page" />
         </Head>
-        <div className="home-container01"></div>
-        <div className="home-container02">
-          <h1
-            data-plx=".5"
-            data-aos="fade-right"
-            className="home-text parallax-x"
-          >
-            <span>
-              Beautiful &amp; Effective
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
+        <header data-thq="thq-navbar" className="home-navbar-interactive">
+          <Link href="/">
+            <a className="home-link">
+              <img
+                alt="logo"
+                src="/playground_assets/humantime.svg"
+                data-aos="fade-in"
+                className="home-logo"
               />
-            </span>
-            <br></br>
-            <span>Landing Pages</span>
-          </h1>
-        </div>
-        <div className="home-container03">
-          <div className="home-container04">
-            <span data-plx="2" className="home-text04 parallax-x">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx="-2" className="home-text05 parallax-x">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx="2.5" className="home-text06 parallax-x">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx="-2.5" className="home-text07 parallax-x parallax-y">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx=".3" className="home-text08 parallax-x parallax-y">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx="-.3" className="home-text09 parallax-x">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx="3" className="home-text10 parallax-x">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-            <span data-plx="-3" className="home-text11 parallax-x">
-              Figure Out Easy What Is Your Ideal Page
-            </span>
-          </div>
-          <div className="home-container05">
-            <img
-              alt="image"
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEzfHxpbnRlcm5ldHxlbnwwfHx8fDE2NzE3MTg5MDc&amp;ixlib=rb-4.0.3&amp;w=800"
-              data-aos="fade-left"
-              className="home-image"
-            />
-          </div>
-        </div>
-        <div className="home-container06">
-          <div className="home-container07">
-            <h1
-              data-plx="-2"
-              data-aos="fade-right"
-              className="home-text12 parallax-x"
+            </a>
+          </Link>
+          <div
+            data-thq="thq-navbar-nav"
+            data-role="Nav"
+            className="home-desktop-menu"
+          >
+            <nav
+              data-thq="thq-navbar-nav-links"
+              data-role="Nav"
+              className="home-nav"
             >
-              Smart Contact Forms
-            </h1>
+              <span className="home-text">About</span>
+              <span className="home-text01">Features</span>
+              <span className="home-text02">Pricing</span>
+              <span className="home-text03">Team</span>
+              <span className="home-text04">Blog</span>
+            </nav>
           </div>
-        </div>
-        <div data-aos="zoom-in" className="home-banner">
-          <h1 className="home-text13">Our Mission</h1>
-          <span className="home-text14">
-            <span>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-                volutpat turpis. Mauris luctus rutrum mi ut rhoncus. Integer in
-                dignissim tortor. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Sed non volutpat turpis. Mauris luctus rutrum
-                mi ut rhoncus. Integer in dignissim tortor. Sed non volutpat
-                turpis. Mauris luctus rutrum mi ut rhoncus. Integer in dignissim
-                ortor.
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <span>
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-            </span>
-          </span>
-          <button className="home-button button">Read More</button>
-        </div>
-        <div data-aos="zoom-in-left" className="home-features">
-          <h1 className="home-text18">
-            <span>Explore our services</span>
-            <br></br>
-            <span></span>
-          </h1>
-          <span className="home-text21">
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem
-              lorem, malesuada in metus vitae, scelerisque accumsan ipsum. Nam
-              pellentesque nulla leo, sagittis vehicula sem commodo nec.​
-            </span>
-            <span></span>
-          </span>
-          <div className="home-container08">
-            <FeatureCard3 rootClassName="rootClassName"></FeatureCard3>
-            <FeatureCard3 rootClassName="rootClassName3"></FeatureCard3>
-            <FeatureCard3 rootClassName="rootClassName5"></FeatureCard3>
-            <FeatureCard3 rootClassName="rootClassName1"></FeatureCard3>
+          <div data-thq="thq-navbar-btn-group" className="home-btn-group">
+            <button className="home-login button">Login</button>
+            <button className="home-register button">Register</button>
           </div>
-        </div>
-        <div className="home-features1">
-          <h1 className="home-text24">
-            <span>Discover our</span>
-            <br></br>
-            <span>unique features</span>
-          </h1>
-          <div className="home-separator"></div>
-          <div className="home-container09">
-            <div className="home-container10">
-              <FeatureCard4 rootClassName="rootClassName1"></FeatureCard4>
-              <FeatureCard4 rootClassName="rootClassName4"></FeatureCard4>
-              <FeatureCard4 rootClassName="rootClassName3"></FeatureCard4>
-              <FeatureCard4 rootClassName="rootClassName2"></FeatureCard4>
+          <div data-thq="thq-burger-menu" className="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" className="home-icon">
+              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" className="home-mobile-menu">
+            <div
+              data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
+              className="home-nav1"
+            >
+              <div className="home-container1">
+                <Link href="/">
+                  <a className="home-link1">
+                    <img
+                      alt="image"
+                      src="/playground_assets/humantime.svg"
+                      className="home-image"
+                    />
+                  </a>
+                </Link>
+                <div data-thq="thq-close-menu" className="home-menu-close">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    dasta-aos="fade-in"
+                    className="home-icon02"
+                  >
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
+                className="home-nav2"
+              >
+                <span data-aos="fade-in" className="home-text05">
+                  About
+                </span>
+                <span data-aos="fade-in" className="home-text06">
+                  Features
+                </span>
+                <span data-aos="fade-in" className="home-text07">
+                  Pricing
+                </span>
+                <span data-aos="fade-in" className="home-text08">
+                  Team
+                </span>
+                <span data-aos="fade-in" className="home-text09">
+                  Blog
+                </span>
+              </nav>
+              <div className="home-container2">
+                <button data-aos="fade-in" className="home-login1 button">
+                  Login
+                </button>
+                <button data-aos="fade-in" className="home-register1 button">
+                  Register
+                </button>
+              </div>
             </div>
-            <img
-              alt="image"
-              src="https://images.unsplash.com/photo-1471086569966-db3eebc25a59?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxtaW5pbWFsaXNtfGVufDB8fHx8MTYyNjQ0NTY1Nw&amp;ixlib=rb-1.2.1&amp;h=1000"
-              className="home-image1"
-            />
+            <div className="home-icon-group">
+              <svg viewBox="0 0 950.8571428571428 1024" className="home-icon04">
+                <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+              </svg>
+              <svg viewBox="0 0 877.7142857142857 1024" className="home-icon06">
+                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+              </svg>
+              <svg viewBox="0 0 602.2582857142856 1024" className="home-icon08">
+                <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
+              </svg>
+            </div>
           </div>
+        </header>
+        <div className="home-container3">
+          <span data-plx="-2" className="home-text10 parallax-x">
+            <span>
+              we have the best human page generators in the market we have the
+              best human page generators in the market we have the best human
+              page generators in the market 
+            </span>
+            <br></br>
+          </span>
         </div>
+        <AppComponent></AppComponent>
+        <AppComponent
+          image_src="https://images.unsplash.com/photo-1671734310533-7ad84cff94e4?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTkwMzUzNQ&amp;ixlib=rb-4.0.3&amp;w=1500"
+          image_src1="https://images.unsplash.com/photo-1671831817096-7e635d113260?ixid=Mnw5MTMyMXwwfDF8YWxsfDN8fHx8fHwyfHwxNjcxOTAzNTM1&amp;ixlib=rb-4.0.3&amp;w=1500"
+        ></AppComponent>
       </div>
       <style jsx>
         {`
@@ -159,310 +143,391 @@ const Home = (props) => {
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
+            background-color: #111;
           }
-          .home-container01 {
-            flex: 0 0 auto;
+          .home-navbar-interactive {
             width: 100%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 100px;
             display: flex;
-            align-items: flex-start;
-          }
-          .home-container02 {
-            flex: 0 0 auto;
-            width: 100%;
-            height: auto;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: flex-start;
-          }
-          .home-text {
-            top: 0;
-            width: 100%;
-            position: sticky;
-            font-size: 200px;
-            font-family: Khand;
-          }
-          .home-container03 {
-            width: 100%;
-            height: auto;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: flex-start;
-          }
-          .home-container04 {
-            flex: 0 0 auto;
-            width: 50%;
-            height: auto;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .home-text04 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text05 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text06 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text07 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text08 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text09 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text10 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-text11 {
-            font-size: 65px;
-            font-family: Khand;
-          }
-          .home-container05 {
-            flex: 0 0 auto;
-            width: 50%;
-            height: auto;
-            display: flex;
-            padding: var(--dl-space-space-unit);
             position: relative;
             align-items: center;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .home-image {
-            width: 100%;
-            height: 600px;
-            align-self: center;
-            box-shadow: 11px 18px 20px #5a5a5a;
-            object-fit: contain;
-            border-radius: 10px;
-            background-position: center;
-            background-attachment: fixed;
-          }
-          .home-container06 {
-            flex: 0 0 auto;
-            width: 100%;
-            height: auto;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: flex-start;
-          }
-          .home-container07 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-text12 {
-            width: 100%;
-            font-size: 200px;
-            font-family: Khand;
-          }
-          .home-banner {
-            width: 100%;
-            display: flex;
-            padding: var(--dl-space-space-threeunits);
-            align-items: center;
-            flex-direction: column;
+            padding-top: var(--dl-space-space-twounits);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
+            background-color: #111;
           }
-          .home-text13 {
-            font-size: 130px;
-            text-align: center;
-            font-family: Khand;
+          .home-link {
+            display: contents;
           }
-          .home-text14 {
-            font-size: 22px;
-            max-width: var(--dl-size-size-maxwidth);
-            margin-top: var(--dl-space-space-twounits);
-            text-align: center;
-            font-family: Khand;
-            margin-bottom: var(--dl-space-space-twounits);
+          .home-logo {
+            height: 4rem;
+            text-decoration: none;
           }
-          .home-button {
-            font-size: 22px;
-            transition: 0.3s;
-            font-family: Khand;
-            padding-top: var(--dl-space-space-unit);
-            padding-left: var(--dl-space-space-twounits);
-            padding-right: var(--dl-space-space-twounits);
-            padding-bottom: var(--dl-space-space-unit);
+          .home-desktop-menu {
+            display: none;
           }
-          .home-button:hover {
-            transform: scale(1.02);
-          }
-          .home-features {
-            width: 100%;
-            display: flex;
-            padding: var(--dl-space-space-threeunits);
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: center;
-            flex-direction: column;
-          }
-          .home-text18 {
-            font-size: 130px;
-            font-family: Khand;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .home-text21 {
-            color: var(--dl-color-gray-700);
-            width: 70%;
-            font-size: 22px;
-            text-align: center;
-            font-family: Khand;
-          }
-          .home-container08 {
-            width: 100%;
-            display: grid;
-            grid-gap: var(--dl-space-space-twounits);
-            margin-top: var(--dl-space-space-fourunits);
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-          }
-          .home-features1 {
-            width: 100%;
-            display: flex;
-            padding: var(--dl-space-space-threeunits);
-            max-width: var(--dl-size-size-maxwidth);
-            flex-direction: column;
-          }
-          .home-text24 {
-            font-size: 3rem;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .home-separator {
-            width: 100px;
-            height: 2px;
-            background-color: var(--dl-color-gray-500);
-          }
-          .home-container09 {
+          .home-nav {
             flex: 0 0 auto;
-            width: 100%;
             display: flex;
-            margin-top: var(--dl-space-space-twounits);
+            align-items: center;
+            flex-direction: row;
+          }
+          .home-text {
+            color: #fff;
+            font-family: Khand;
+          }
+          .home-text01 {
+            color: #fff;
+            font-family: Khand;
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .home-text02 {
+            color: #fff;
+            font-family: Khand;
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .home-text03 {
+            color: #fff;
+            font-family: Khand;
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .home-text04 {
+            color: #fff;
+            font-family: Khand;
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .home-btn-group {
+            display: none;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-container10 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+          .home-login {
+            border-width: 0px;
+            margin-right: var(--dl-space-space-twounits);
+            background-color: var(--dl-color-gray-white);
           }
-          .home-image1 {
-            width: 450px;
-            height: 450px;
-            object-fit: cover;
-            flex-shrink: 0;
-            margin-left: var(--dl-space-space-fourunits);
-            border-radius: var(--dl-radius-radius-round);
-            object-position: left;
+          .home-register {
+            border-color: #ffffff;
+            background-color: var(--dl-color-gray-white);
+          }
+          .home-burger-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-icon {
+            fill: #fff;
+            width: 50px;
+            height: 50px;
+          }
+          .home-mobile-menu {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            display: none;
+            padding: 32px;
+            z-index: 100;
+            position: fixed;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #111111;
+          }
+          .home-nav1 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-container1 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--dl-space-space-threeunits);
+            justify-content: space-between;
+          }
+          .home-link1 {
+            display: contents;
+          }
+          .home-image {
+            height: 4rem;
+            margin-left: 15px;
+            text-decoration: none;
+          }
+          .home-menu-close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-icon02 {
+            fill: #fff;
+            width: 50px;
+            height: 50px;
+            margin-right: var(--dl-space-space-unit);
+          }
+          .home-nav2 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-text05 {
+            color: #fff;
+            font-size: 80px;
+            font-family: Khand;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text06 {
+            color: #fff;
+            font-size: 80px;
+            font-family: Khand;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text07 {
+            color: #fff;
+            font-size: 80px;
+            font-family: Khand;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text08 {
+            color: #fff;
+            font-size: 80px;
+            font-family: Khand;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text09 {
+            color: #fff;
+            font-size: 80px;
+            font-family: Khand;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-container2 {
+            flex: 0 0 auto;
+            width: auto;
+            display: flex;
+            margin-top: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: row;
+          }
+          .home-login1 {
+            font-size: 50px;
+            font-family: Khand;
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-register1 {
+            font-size: 50px;
+            font-family: Khand;
+          }
+          .home-icon-group {
+            display: flex;
+          }
+          .home-icon04 {
+            fill: var(--dl-color-gray-white);
+            width: 100px;
+            height: 100px;
+            margin-top: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-icon06 {
+            fill: var(--dl-color-gray-white);
+            width: 100px;
+            height: 100px;
+            margin-top: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-icon08 {
+            fill: var(--dl-color-gray-white);
+            width: 100px;
+            height: 100px;
+            margin-top: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-container3 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            display: flex;
+            position: relative;
+            align-self: center;
+          }
+          .home-text10 {
+            color: var(--dl-color-gray-white);
+            font-size: 32px;
+            text-align: left;
+            font-family: Khand;
+          }
+          @media (max-width: 1920px) {
+            .home-desktop-menu {
+              display: none;
+            }
+            .home-btn-group {
+              display: none;
+            }
+            .home-burger-menu {
+              display: flex;
+            }
           }
           @media (max-width: 1600px) {
-            .home-text12 {
-              font-size: 200px;
-              font-family: Khand;
+            .home-container3 {
+              position: relative;
+            }
+            .home-text10 {
+              font-size: 26px;
             }
           }
-
+          @media (max-width: 1200px) {
+            .home-text10 {
+              font-size: 20px;
+            }
+          }
           @media (max-width: 991px) {
-            .home-text14 {
-              max-width: 100%;
-            }
-            .home-text18 {
-              text-align: center;
-            }
-            .home-text21 {
-              text-align: center;
-            }
-            .home-container08 {
-              grid-template-columns: 1fr 1fr;
-            }
-            .home-features1 {
-              align-items: center;
-            }
-            .home-container09 {
-              flex-direction: column;
-            }
-            .home-image1 {
-              width: 300px;
-              height: 300px;
-              margin-top: var(--dl-space-space-twounits);
-              margin-left: 0px;
+            .home-text10 {
+              font-size: 16px;
             }
           }
           @media (max-width: 767px) {
-            .home-banner {
+            .home-navbar-interactive {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .home-text14 {
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+            .home-text01 {
+              margin-left: var(--dl-space-space-unit);
             }
-            .home-features {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
+            .home-text02 {
+              margin-left: var(--dl-space-space-unit);
             }
-            .home-text18 {
-              text-align: center;
+            .home-text03 {
+              margin-left: var(--dl-space-space-unit);
             }
-            .home-features1 {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
+            .home-text04 {
+              margin-left: var(--dl-space-space-unit);
             }
-            .home-text24 {
-              text-align: center;
+            .home-icon {
+              fill: #fff;
+              width: 30px;
+              height: 30px;
             }
-            .home-container09 {
-              flex-direction: column;
+            .home-mobile-menu {
+              background-color: #111;
+            }
+            .home-icon02 {
+              fill: #fff;
+              width: 30px;
+              height: 30px;
+            }
+            .home-text05 {
+              color: #ffffff;
+              font-family: Khand;
+            }
+            .home-text06 {
+              color: #ffffff;
+              font-family: Khand;
+            }
+            .home-text07 {
+              color: #ffffff;
+              font-family: Khand;
+            }
+            .home-text08 {
+              color: #ffffff;
+              font-family: Khand;
+            }
+            .home-text09 {
+              color: #ffffff;
+              font-family: Khand;
+            }
+            .home-login1 {
+              font-family: Khand;
+            }
+            .home-register1 {
+              font-family: Khand;
+            }
+            .home-icon04 {
+              width: 80px;
+              height: 80px;
+            }
+            .home-icon06 {
+              width: 80px;
+              height: 80px;
+            }
+            .home-icon08 {
+              width: 80px;
+              height: 80px;
+            }
+            .home-text10 {
+              font-size: 12px;
             }
           }
           @media (max-width: 479px) {
-            .home-text12 {
-              font-size: 100px;
-            }
-            .home-banner {
-              padding-top: var(--dl-space-space-twounits);
-              padding-left: var(--dl-space-space-unit);
+            .home-navbar-interactive {
+              padding: var(--dl-space-space-unit);
+              align-self: center;
               padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-twounits);
+              background-color: #111;
             }
-            .home-features {
-              padding-top: var(--dl-space-space-twounits);
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-twounits);
+            .home-icon {
+              fill: #fff;
+              width: 30px;
+              height: 30px;
             }
-            .home-container08 {
-              grid-template-columns: 1fr;
+            .home-mobile-menu {
+              padding: 16px;
+              background-color: #111111;
             }
-            .home-features1 {
-              padding-top: var(--dl-space-space-twounits);
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-twounits);
+            .home-icon02 {
+              fill: #fff;
+              width: 30px;
+              height: 30px;
             }
-            .home-container10 {
-              grid-template-columns: 1fr;
+            .home-text05 {
+              color: #fff;
+              font-family: Khand;
             }
-            .home-image1 {
-              width: 250px;
-              height: 250px;
+            .home-text06 {
+              color: #fff;
+              font-family: Khand;
+            }
+            .home-text07 {
+              color: #fff;
+              font-family: Khand;
+            }
+            .home-text08 {
+              color: #fff;
+              font-family: Khand;
+            }
+            .home-text09 {
+              color: #fff;
+              font-family: Khand;
+            }
+            .home-login1 {
+              color: #ffffff;
+              font-family: Khand;
+              border-color: #fff;
+              background-color: #000000;
+            }
+            .home-register1 {
+              color: #fff;
+              font-family: Khand;
+              border-color: #fff;
+              background-color: #000;
+            }
+            .home-icon04 {
+              width: 80px;
+              height: 80px;
+            }
+            .home-icon06 {
+              width: 80px;
+              height: 80px;
+            }
+            .home-icon08 {
+              width: 80px;
+              height: 80px;
+            }
+            .home-text10 {
+              font-size: 8px;
             }
           }
         `}

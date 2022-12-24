@@ -38,7 +38,7 @@ class CustomDocument extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html:
-                '</noscript><!--This is the head section-->\n<!-- <style> ... </style> -->\n<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">\n<noscript>',
+                '</noscript><!--This is the head section-->\n\n<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">\n<link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">\n<noscript>',
             }}
           ></noscript>
         </Head>
@@ -48,7 +48,7 @@ class CustomDocument extends Document {
           <div
             dangerouslySetInnerHTML={{
               __html:
-                "<!-- Your body code here -->\n<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Giladx/pureParallax/dist/pureParallax.js\"></script>\n<script>\n\t\tdocument.addEventListener('DOMContentLoaded', function () {\n\n\t\t\tpureParallax({\n\t\t\t\tselector: '[data-plx]',\n\t\t\t\taxisSelector: 'parallax-x',\n\t\t\t\tbgSelector: 'parallax-bg',\n\t\t\t\ttopSelector: 'parallax-top',\n\t\t\t\tbtmSelector: 'parallax-btm',\n\t\t\t\tcontainer: 'section',\n\t\t\t\toffsetHeader: true, \n\t\t\t\theaderId: 'hd',\n\t\t\t\tminWidth: 64,\n\t\t\t\toldBrowserSupport: 'false'\n\t\t\t});\n\n\t\t});\n\t\t/*\n\t\tconst pureParallax = new pureParallax({\n\t\t\tselector: '[data-plx]',\n\t\t\taxisSelector: 'parallax-x',\n\t\t\tbgSelector: 'parallax-bg',\n\t\t\ttopSelector: 'parallax-top',\n\t\t\tbtmSelector: 'parallax-btm',\n\t\t\tcontainer: 'section',\n\t\t\toffsetHeader: true, \n\t\t\theaderId: 'hd',\n\t\t\tminWidth: 64,\n\t\t\toldBrowserSupport: 'false'\n\t\t});\n\t\t*/\n\t</script>\n    <script src=\"https://unpkg.com/aos@2.3.1/dist/aos.js\"></script>\n<script>\n  AOS.init();\n</script>",
+                "<!-- Your body code here -->\n<script src=\"https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Giladx/pureParallax/dist/pureParallax.min.js\"></script>\n<script>\n\t\tdocument.addEventListener('DOMContentLoaded', function () {\n\n\t\t\tpureParallax({\n\t\t\t\tselector: '[data-plx]',\n\t\t\t\taxisSelector: 'parallax-x',\n\t\t\t\tbgSelector: 'parallax-bg',\n\t\t\t\ttopSelector: 'parallax-top',\n\t\t\t\tbtmSelector: 'parallax-btm',\n\t\t\t\tcontainer: 'section',\n\t\t\t\toffsetHeader: true, \n\t\t\t\theaderId: 'hd',\n\t\t\t\tminWidth: 64,\n\t\t\t\toldBrowserSupport: 'false'\n\t\t\t});\n\n\t\t});\n\t\t/*\n\t\tconst pureParallax = new pureParallax({\n\t\t\tselector: '[data-plx]',\n\t\t\taxisSelector: 'parallax-x',\n\t\t\tbgSelector: 'parallax-bg',\n\t\t\ttopSelector: 'parallax-top',\n\t\t\tbtmSelector: 'parallax-btm',\n\t\t\tcontainer: 'section',\n\t\t\toffsetHeader: true, \n\t\t\theaderId: 'hd',\n\t\t\tminWidth: 64,\n\t\t\toldBrowserSupport: 'false'\n\t\t});\n\t\t*/\n\t</script>\n    <script src=\"https://unpkg.com/aos@2.3.1/dist/aos.js\"></script>\n    <script>\n    AOS.init();\n    </script> \n    <script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>",
             }}
           ></div>
         </body>
