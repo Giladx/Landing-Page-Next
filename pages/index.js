@@ -2,22 +2,22 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import AppComponent from '../components/component'
+import DangerousHTML from 'dangerous-html/react'
 
 const Home = (props) => {
   return (
     <>
       <div className="home-container">
         <Head>
-          <title>Landing Page</title>
-          <meta property="og:title" content="Landing Page" />
+          <title>Human Time</title>
+          <meta property="og:title" content="Human Time" />
         </Head>
         <header data-thq="thq-navbar" className="home-navbar-interactive">
           <Link href="/">
             <a className="home-link">
               <img
                 alt="logo"
-                src="/playground_assets/humantime.svg"
+                src="/humantime21.svg"
                 data-aos="fade-in"
                 className="home-logo"
               />
@@ -60,7 +60,7 @@ const Home = (props) => {
                   <a className="home-link1">
                     <img
                       alt="image"
-                      src="/playground_assets/humantime.svg"
+                      src="/humantime21.svg"
                       className="home-image"
                     />
                   </a>
@@ -118,21 +118,30 @@ const Home = (props) => {
             </div>
           </div>
         </header>
-        <div className="home-container3">
-          <span data-plx="-2" className="home-text10 parallax-x">
-            <span>
-              we have the best human page generators in the market we have the
-              best human page generators in the market we have the best human
-              page generators in the market 
-            </span>
-            <br></br>
-          </span>
+        <div className="home-container3"></div>
+        <div className="home-container4">
+          <div>
+            <DangerousHTML
+              html={`<script>
+let player = document.getElementById("firstLottie");
+
+player.addEventListener("ready", () => {
+  LottieInteractivity.create({
+			  mode:"scroll",
+			  player: "#firstLottie",
+			  actions: [
+        {
+            visibility:[0, 1.0],
+            type: "seek",
+            frames: [0, 300],
+        },
+        ]
+			});
+});
+</script>`}
+            ></DangerousHTML>
+          </div>
         </div>
-        <AppComponent></AppComponent>
-        <AppComponent
-          image_src="https://images.unsplash.com/photo-1671734310533-7ad84cff94e4?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTkwMzUzNQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-          image_src1="https://images.unsplash.com/photo-1671831817096-7e635d113260?ixid=Mnw5MTMyMXwwfDF8YWxsfDN8fHx8fHwyfHwxNjcxOTAzNTM1&amp;ixlib=rb-4.0.3&amp;w=1500"
-        ></AppComponent>
       </div>
       <style jsx>
         {`
@@ -349,16 +358,17 @@ const Home = (props) => {
           .home-container3 {
             flex: 0 0 auto;
             width: 100%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
             height: auto;
             display: flex;
             position: relative;
             align-self: center;
           }
-          .home-text10 {
-            color: var(--dl-color-gray-white);
-            font-size: 32px;
-            text-align: left;
-            font-family: Khand;
+          .home-container4 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
           }
           @media (max-width: 1920px) {
             .home-desktop-menu {
@@ -375,20 +385,8 @@ const Home = (props) => {
             .home-container3 {
               position: relative;
             }
-            .home-text10 {
-              font-size: 26px;
-            }
           }
-          @media (max-width: 1200px) {
-            .home-text10 {
-              font-size: 20px;
-            }
-          }
-          @media (max-width: 991px) {
-            .home-text10 {
-              font-size: 16px;
-            }
-          }
+
           @media (max-width: 767px) {
             .home-navbar-interactive {
               padding-left: var(--dl-space-space-twounits);
@@ -414,10 +412,14 @@ const Home = (props) => {
             .home-mobile-menu {
               background-color: #111;
             }
+            .home-image {
+              margin-left: 0px;
+            }
             .home-icon02 {
               fill: #fff;
               width: 30px;
               height: 30px;
+              margin-right: 0px;
             }
             .home-text05 {
               color: #ffffff;
@@ -457,9 +459,6 @@ const Home = (props) => {
               width: 80px;
               height: 80px;
             }
-            .home-text10 {
-              font-size: 12px;
-            }
           }
           @media (max-width: 479px) {
             .home-navbar-interactive {
@@ -477,10 +476,14 @@ const Home = (props) => {
               padding: 16px;
               background-color: #111111;
             }
+            .home-image {
+              margin-left: 0px;
+            }
             .home-icon02 {
               fill: #fff;
               width: 30px;
               height: 30px;
+              margin-right: 0px;
             }
             .home-text05 {
               color: #fff;
@@ -525,9 +528,6 @@ const Home = (props) => {
             .home-icon08 {
               width: 80px;
               height: 80px;
-            }
-            .home-text10 {
-              font-size: 8px;
             }
           }
         `}

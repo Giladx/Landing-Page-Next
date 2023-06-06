@@ -112,37 +112,13 @@ const AppComponent = (props) => {
             {props.text26}
           </span>
           <span data-aos="fade-in" className="component-text28">
-            {props.text27}
+            {props.text263}
           </span>
           <span data-aos="fade-in" className="component-text29">
-            {props.text28}
+            {props.text262}
           </span>
           <span data-aos="fade-in" className="component-text30">
-            {props.text29}
-          </span>
-          <span data-aos="fade-in" className="component-text31">
-            {props.text30}
-          </span>
-          <span data-aos="fade-in" className="component-text32">
-            {props.text31}
-          </span>
-          <span data-aos="fade-in" className="component-text33">
-            {props.text32}
-          </span>
-          <span data-aos="fade-in" className="component-text34">
-            {props.text33}
-          </span>
-          <span data-aos="fade-in" className="component-text35">
-            {props.text34}
-          </span>
-          <span data-aos="fade-in" className="component-text36">
-            {props.text35}
-          </span>
-          <span data-aos="fade-in" className="component-text37">
-            {props.text36}
-          </span>
-          <span data-aos="fade-in" className="component-text38">
-            {props.text37}
+            {props.text261}
           </span>
         </div>
       </div>
@@ -374,54 +350,6 @@ const AppComponent = (props) => {
             font-size: 40px;
             font-family: Khand;
           }
-          .component-text31 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text32 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text33 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text34 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text35 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text36 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text37 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
-          .component-text38 {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            font-size: 40px;
-            font-family: Khand;
-          }
           @media (max-width: 1600px) {
             .component-text01 {
               width: 100%;
@@ -540,38 +468,6 @@ const AppComponent = (props) => {
               font-size: 30px;
             }
             .component-text30 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text31 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text32 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text33 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text34 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text35 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text36 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text37 {
-              width: 100%;
-              font-size: 30px;
-            }
-            .component-text38 {
               width: 100%;
               font-size: 30px;
             }
@@ -702,38 +598,6 @@ const AppComponent = (props) => {
               font-size: 28px;
             }
             .component-text30 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text31 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text32 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text33 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text34 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text35 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text36 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text37 {
-              width: 100%;
-              font-size: 28px;
-            }
-            .component-text38 {
               width: 100%;
               font-size: 28px;
             }
@@ -881,38 +745,6 @@ const AppComponent = (props) => {
               width: 100%;
               font-size: 34px;
             }
-            .component-text31 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text32 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text33 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text34 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text35 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text36 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text37 {
-              width: 100%;
-              font-size: 34px;
-            }
-            .component-text38 {
-              width: 100%;
-              font-size: 34px;
-            }
           }
           @media (max-width: 767px) {
             .component-image {
@@ -1041,38 +873,6 @@ const AppComponent = (props) => {
               width: 100%;
               font-size: 32px;
             }
-            .component-text31 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text32 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text33 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text34 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text35 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text36 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text37 {
-              width: 100%;
-              font-size: 32px;
-            }
-            .component-text38 {
-              width: 100%;
-              font-size: 32px;
-            }
           }
           @media (max-width: 479px) {
             .component-container {
@@ -1180,30 +980,6 @@ const AppComponent = (props) => {
             .component-text30 {
               font-size: 18px;
             }
-            .component-text31 {
-              font-size: 18px;
-            }
-            .component-text32 {
-              font-size: 18px;
-            }
-            .component-text33 {
-              font-size: 18px;
-            }
-            .component-text34 {
-              font-size: 18px;
-            }
-            .component-text35 {
-              font-size: 18px;
-            }
-            .component-text36 {
-              font-size: 18px;
-            }
-            .component-text37 {
-              font-size: 18px;
-            }
-            .component-text38 {
-              font-size: 18px;
-            }
           }
         `}
       </style>
@@ -1212,97 +988,81 @@ const AppComponent = (props) => {
 }
 
 AppComponent.defaultProps = {
-  image_src:
-    'https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDM2fHx3ZWIlMjBwYWdlfGVufDB8fHx8MTY3MTg4ODg3MA&ixlib=rb-4.0.3&w=1500',
-  image_alt: 'image',
+  text261: 'we have the best human page generators in the market',
+  text11: 'we have the best human page generators in the market',
+  text3: 'we have the best human page generators in the market',
   image_src1:
     'https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDU3fHx3ZWIlMjBwYWdlfGVufDB8fHx8MTY3MTg4ODkwMA&ixlib=rb-4.0.3&w=1500',
-  image_alt1: 'image',
-  heading: 'Human Page Generator',
-  text: 'we have the best human page generators in the market',
+  text4: 'we have the best human page generators in the market',
+  text13: 'we have the best human page generators in the market',
+  text263: 'we have the best human page generators in the market',
+  text24: 'we have the best human page generators in the market',
+  image_alt: 'image',
   text1: 'we have the best human page generators in the market',
   text2: 'we have the best human page generators in the market',
-  text3: 'we have the best human page generators in the market',
-  text4: 'we have the best human page generators in the market',
-  text5: 'we have the best human page generators in the market',
-  text6: 'we have the best human page generators in the market',
-  text7: 'we have the best human page generators in the market',
-  text8: 'we have the best human page generators in the market',
   text9: 'we have the best human page generators in the market',
-  text10: 'we have the best human page generators in the market',
-  text11: 'we have the best human page generators in the market',
-  text12: 'we have the best human page generators in the market',
-  text13: 'we have the best human page generators in the market',
-  text14: 'we have the best human page generators in the market',
-  text15: 'we have the best human page generators in the market',
-  text16: 'we have the best human page generators in the market',
-  text17: 'we have the best human page generators in the market',
-  text18: 'we have the best human page generators in the market',
-  text19: 'we have the best human page generators in the market',
-  text20: 'we have the best human page generators in the market',
-  text21: 'we have the best human page generators in the market',
+  text7: 'we have the best human page generators in the market',
   text22: 'we have the best human page generators in the market',
+  text21: 'we have the best human page generators in the market',
+  text17: 'we have the best human page generators in the market',
+  text: 'we have the best human page generators in the market',
   text23: 'we have the best human page generators in the market',
-  text24: 'we have the best human page generators in the market',
-  text25: 'we have the best human page generators in the market',
+  text14: 'we have the best human page generators in the market',
+  text5: 'we have the best human page generators in the market',
+  text15: 'we have the best human page generators in the market',
+  text8: 'we have the best human page generators in the market',
+  image_src:
+    'https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDM2fHx3ZWIlMjBwYWdlfGVufDB8fHx8MTY3MTg4ODg3MA&ixlib=rb-4.0.3&w=1500',
   text26: 'we have the best human page generators in the market',
-  text27: 'we have the best human page generators in the market',
-  text28: 'we have the best human page generators in the market',
-  text29: 'we have the best human page generators in the market',
-  text30: 'we have the best human page generators in the market',
-  text31: 'we have the best human page generators in the market',
-  text32: 'we have the best human page generators in the market',
-  text33: 'we have the best human page generators in the market',
-  text34: 'we have the best human page generators in the market',
-  text35: 'we have the best human page generators in the market',
-  text36: 'we have the best human page generators in the market',
-  text37: 'we have the best human page generators in the market',
+  text12: 'we have the best human page generators in the market',
+  text16: 'we have the best human page generators in the market',
+  text19: 'we have the best human page generators in the market',
+  text25: 'we have the best human page generators in the market',
+  text6: 'we have the best human page generators in the market',
+  text10: 'we have the best human page generators in the market',
+  text18: 'we have the best human page generators in the market',
+  image_alt1: 'image',
+  heading: 'Human Page Generator',
+  text20: 'we have the best human page generators in the market',
+  text262: 'we have the best human page generators in the market',
 }
 
 AppComponent.propTypes = {
-  image_src: PropTypes.string,
-  image_alt: PropTypes.string,
+  text261: PropTypes.string,
+  text11: PropTypes.string,
+  text3: PropTypes.string,
   image_src1: PropTypes.string,
-  image_alt1: PropTypes.string,
-  heading: PropTypes.string,
-  text: PropTypes.string,
+  text4: PropTypes.string,
+  text13: PropTypes.string,
+  text263: PropTypes.string,
+  text24: PropTypes.string,
+  image_alt: PropTypes.string,
   text1: PropTypes.string,
   text2: PropTypes.string,
-  text3: PropTypes.string,
-  text4: PropTypes.string,
-  text5: PropTypes.string,
-  text6: PropTypes.string,
-  text7: PropTypes.string,
-  text8: PropTypes.string,
   text9: PropTypes.string,
-  text10: PropTypes.string,
-  text11: PropTypes.string,
-  text12: PropTypes.string,
-  text13: PropTypes.string,
-  text14: PropTypes.string,
-  text15: PropTypes.string,
-  text16: PropTypes.string,
-  text17: PropTypes.string,
-  text18: PropTypes.string,
-  text19: PropTypes.string,
-  text20: PropTypes.string,
-  text21: PropTypes.string,
+  text7: PropTypes.string,
   text22: PropTypes.string,
+  text21: PropTypes.string,
+  text17: PropTypes.string,
+  text: PropTypes.string,
   text23: PropTypes.string,
-  text24: PropTypes.string,
-  text25: PropTypes.string,
+  text14: PropTypes.string,
+  text5: PropTypes.string,
+  text15: PropTypes.string,
+  text8: PropTypes.string,
+  image_src: PropTypes.string,
   text26: PropTypes.string,
-  text27: PropTypes.string,
-  text28: PropTypes.string,
-  text29: PropTypes.string,
-  text30: PropTypes.string,
-  text31: PropTypes.string,
-  text32: PropTypes.string,
-  text33: PropTypes.string,
-  text34: PropTypes.string,
-  text35: PropTypes.string,
-  text36: PropTypes.string,
-  text37: PropTypes.string,
+  text12: PropTypes.string,
+  text16: PropTypes.string,
+  text19: PropTypes.string,
+  text25: PropTypes.string,
+  text6: PropTypes.string,
+  text10: PropTypes.string,
+  text18: PropTypes.string,
+  image_alt1: PropTypes.string,
+  heading: PropTypes.string,
+  text20: PropTypes.string,
+  text262: PropTypes.string,
 }
 
 export default AppComponent
