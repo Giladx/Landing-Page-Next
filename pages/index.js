@@ -142,6 +142,8 @@ player.addEventListener("ready", () => {
             ></DangerousHTML>
           </div>
         </div>
+        <h1 className="home-text10 Heading"> דפי נחיתה מטריפים</h1>
+        <h1 className="home-text11 Heading">במחירים מטורפים</h1>
       </div>
       <style jsx>
         {`
@@ -149,6 +151,7 @@ player.addEventListener("ready", () => {
             width: 100%;
             display: flex;
             overflow: auto;
+            direction: rtl;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
@@ -369,6 +372,16 @@ player.addEventListener("ready", () => {
             width: 100%;
             display: flex;
             align-items: flex-start;
+          }
+          .home-text10 {
+            color: rgb(255, 255, 255);
+            margin-top: var(--dl-space-space-twounits);
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .home-text11 {
+            color: rgb(255, 255, 255);
+            margin-top: var(--dl-space-space-twounits);
+            margin-bottom: var(--dl-space-space-twounits);
           }
           @media (max-width: 1920px) {
             .home-desktop-menu {
